@@ -1,0 +1,60 @@
+    1  passwd
+    2  wget www.github.com
+    3  $ git --version
+    4  $ brew install git
+    5  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    6  $ git --version
+    7  git version
+    8  cd
+    9  cd ~/Desktop
+   10  ls
+   11  echo "# cs131" >> README.md
+   12  git init
+   13  git add README.md
+   14  git commit -m "first commit"
+   15  git branch -M main
+   16  git remote add origin https://github.com/hruday1223/cs131.git
+   17  git push -u origin main
+   18  git bracnch
+   19  git branch
+   20  git push -u origin main
+   21  git push -u origin master
+   22  ls
+   23  cd 0828/
+   24  cd
+   25  ls
+   26  hea 0828
+   27  head 0828
+   28  head
+   29  ls
+   30  mkdir cs131
+   31  ls
+   32  mkdir 0828
+   33  cd 0828/
+   34  touch aa.txt
+   35  touch bb.txt
+   36  touch cc.jpeg
+   37  ls
+   38  ls *.txt
+   39  ls ?.txt
+   40  touch a .txt
+   41  ls ?.txt
+   42  touch a.txt
+   43  ls ?.txt
+   44  ls ??.txt
+   45  ls -l *.jpeg
+   46  ls -l *.txt
+   47  cd 0828/
+   48  ls
+   49  tail -15 aa.txt
+   50  head aa.txt
+   51  rm
+   52  rm 0828
+   53  nano aa.txt
+   54  ls
+   55  git clone https://github.com/hruday1223/cs131.git
+   56  ls
+   57  cd cs131/
+   58  mkdir ws1
+   59  ls
+   60  history > cmds.log

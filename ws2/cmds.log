@@ -1,0 +1,12 @@
+  119  ls
+  120  cp /datasets/taxidata.tar.gz .
+  121  ls
+  122  tar zxvf taxidata.tar.gz
+  123  vi taxidata/2019-03.csv
+  124  grep 2019-03-12 taxidata/2019-03.csv > res_1.txt
+  125  tail -n 20 res_1.txt >> "results.txt"
+  126  wc -l grep 2019-03-12 taxidata/2019-03.csv >> results.txt
+  127  grep 2019-03-12 taxidata/2019-03.csv | wc -l >> results.txt
+  128  cat results.txt
+  129  history
+  130  history > cmds.log

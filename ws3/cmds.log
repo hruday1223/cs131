@@ -1,0 +1,10 @@
+
+  
+  261  cut -d ',' -f 8 taxidata/2019-01.csv | sort | uniq -c | sort -nr | head -n 3 > cs131/ws3/ws3.txt
+  262  vi cs131/ws3/ws3.txt 
+  263  cut -d ',' -f 8 taxidata/2019-02.csv | sort | uniq -c | sort -nr | head -n 3 >> cs131/ws3/ws3.txt
+  264  vi cs131/ws3/ws3.txt 
+  265  history
+  266  history -help
+  267  man history
+  268  history > cs131/ws3/cmds.log

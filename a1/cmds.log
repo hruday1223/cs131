@@ -1,0 +1,71 @@
+
+  200  cd cs131
+  201  ls
+  202  mkdir a1
+  203  ls
+  204  cd a1
+  205  ls
+  206  cd cs131
+  207  ls
+  208  cd a1
+  209  ls
+  210  vi a1.txt
+  211  id
+  212  vi a1.txt
+  213  mkdir temp
+  214  chmod man
+  215  chmod --help
+  216  ls -1
+  217  cd temp
+  218  ls -1
+  219  ls -la
+  220  chmod 110
+  221  chmod 110 temp
+  222  cd .
+  223  cd ..
+  224  chmod 110 temp
+  225  cd temp
+  226  ls -la
+  227  ls
+  228  vim test.txt
+  229  cd ..
+  230  vi a1.txt
+  231  cd temp
+  232  ls
+  233  ls -l
+  234  cd ..
+  235  vi a1.txt
+  236  mkdir temp2
+  237  mv temp2 temp3
+  238  ls
+  239  vi a1.txt
+  240  ls /proc
+  241  ls /proc | grep mem
+  242  ls /proc | grep cpu
+  243  vi a1.txt
+  244  head meminfo
+  245  head /proc/meminfo
+  246  vi a1.txt
+  247  head /proc/cpuinfo 
+  248  tail /proc/cpuinfo 
+  249  cat /proc/cpuinfo 
+  250  vi a1.txt
+  251  ls /etc
+  252  ls /etc | grep os
+  253  cat /etc/os-release
+  254  vi a1.txt
+  255  cd /etc/
+  256  ls -ltr
+  257  ls -ltr | grep os-release
+  258  cd ..
+  259  ls
+  260  cd usr
+  261  ls
+  262  cd ~/mnt/scratch/hruday23fa/cs131/a1
+  263  cd ..
+  264  cd ~/mnt/scratch/hruday23fa/cs131/a1
+  265  cd mnt
+  266  cd scratch
+  267  cd hruday23fa/cs131/a1/
+  268  ls
+  269  vi a1.txt 

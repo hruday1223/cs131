@@ -1,0 +1,28 @@
+2) [hruday23fa@sjsu a1]$ pwd
+/mnt/scratch/hruday23fa/cs131/a1
+
+3) [hruday23fa@sjsu a1]$ id
+uid=1027(hruday23fa) gid=1027(hruday23fa) groups=1027(hruday23fa)
+
+4) [hruday23fa@sjsu a1]$ chmod 110 temp
+I am allowed to cd in that directory. I can't ls it. I can't ls -l it. I can create files under it
+
+5) I am allowed to mv the directory to temp3. I am allowed to cp a directory. To cp an entire directoy I would do : cp -r olddir newdir
+
+6) Yes you can by doing:
+[hruday23fa@sjsu a1]$ ls /proc | grep mem
+iomem
+meminfo
+[hruday23fa@sjsu a1]$ ls /proc | grep cpu
+cpuinfo
+
+cpuinfo contains information about the cpu"s on my server
+
+7) The total memory on my server is 73080512 kB
+
+8) There are 256 processors on my server.The processor architecture name is pseries. The processor speed is 3.425 GHz
+
+9) VERSION_ID="8.6"
+This information is contained under /etc/os-release
+
+10) lrwxrwxrwx

@@ -1,0 +1,62 @@
+  437  ls
+  438  mkdir ws4
+  439  ls
+  440  script ws4.txt
+  441  alias man
+  442  man alias
+  443  man bashrc
+  444  man .bashrc
+  445  nano ~/. bashrc
+  446  vim ~/. bashrc
+  447  l
+  448  ls -ltr
+  449  alias l
+  450  vim ~/. bashrc
+  451  l
+  452  alias l
+  453  l
+  454  vim ~/. bashrc
+  455  l
+  456  nano ~/.bashrc
+  457  source ~/.bashrc
+  458  l
+  459  w
+  460  ls -l | wc
+  461  ls
+  462  cd ws4
+  463  ls
+  464  mkdir FARE
+  465  ls
+  466  cat taxidata
+  467  cat ws4.txt
+  468  cd
+  469  ls
+  470  cd cs131
+  471  ls
+  472  cat ws4.txt
+  473  q
+  474  cd
+  477  cd taxidata
+  484  cat ws4.txt
+  485  cd cs131
+  486  ls
+  487  vi ws4.txt
+  488  cd ws4
+  489  ls
+  490  cd FARE
+  491  ls
+  492  cat [262.0]-[263.0].txt | awk '{ sum += $1 } END { print sum / NR }' | bc
+  493  [262.0]-[263.0].txt | awk '{ sum += $1 } END { print sum / NR }' | bc >> cs131/ws4.txt
+  494  cd ..
+  495  cs131/ws4/FARE/[262.0]-[263.0].txt | awk '{ sum += $1 } END { print sum / NR }' | bc >> cs131/ws4.txt
+  496  ws4/FARE/[262.0]-[263.0].txt | awk '{ sum += $1 } END { print sum / NR }' | bc >> ws4.txt
+  497  cat ws4/FARE/[262.0]-[263.0].txt | awk '{ sum += $1 } END { print sum / NR }' | bc >> ws4.txt
+  498  cat ws4/FARE/[74.0]-[7.0].txt | awk '{ sum += $1 } END { print sum / NR }' | bc >> ws4.txt
+  499  vi ws4.txt
+  500  mv ws4.txt ws4
+  501  ls
+  502  cd ws4
+  503  ls
+  507  history 71 > cmds.log
+
+***cisco vpn disconnected a few times during the assignment, causing it to lose some of the history***

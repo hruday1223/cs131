@@ -1,0 +1,9 @@
+
+  789  mkdir ws5
+  808  awk -F',' '$8 == 234.0 {print}' taxidata/2019-08.csv | cut -d',' -f9 | sort | uniq -c | sort -nr | head -n 100 > doloc.txt
+  840  grep -Eo '[0-9]+\.[0-9]+' doloc.txt > doloc2.txt
+  857  cd cs131
+  858  cd ws5
+  859  mkdir do234
+  862  for i in $(cat doloc2.txt); do touch cs131/ws5/do234/${i}.txt; done
+  876  wc -l do234/1.0.txt do234/3.0.txt do234/48.0.txt do234/223.0.txt > ws5.txt

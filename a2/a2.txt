@@ -1,0 +1,45 @@
+1) [hruday23fa@sjsu taxidata]$ cut -d',' -f2,17 2019-05.csv | grep "2019-05-11" | cut -d',' -f2 | awk '{ total += $1; count++ } END { print total / count }'
+17.8655
+
+2) [hruday23fa@sjsu ~]$ cut -d',' -f2,17 taxidata/2019-05.csv | grep "2019-05-11" | cut -d',' -f2 | sort -rn | head -n 1
+1309.8
+
+3) [hruday23fa@sjsu ~]$ awk -F',' '$4 > 2 {print $9}' taxidata/2019-05.csv | sort | uniq -c | sort -nr | head -n 10
+  39909 236.0
+  37140 237.0
+  36990 161.0
+  33678 230.0
+  28506 170.0
+  27895 162.0
+  27485 48.0
+  26782 142.0
+  25051 239.0
+  24609 234.0 
+
+4) [hruday23fa@sjsu ~]$ cut -d',' -f2,8,9 taxidata/2019-05.csv | grep "2019-05-20" | cut -d',' -f2,3 | sort | uniq -c | sort -nr | cut -d',' -f2 | sort | uniq -c | sort -nr | head -n 1
+    108 264.0
+
+5)[hruday23fa@sjsu ~]$ cut -d',' -f8 taxidata/2019-01.csv | sort | uniq -c | sort -nr | head -n 1 > cs131/a2/mostpop.txt
+[hruday23fa@sjsu ~]$ cat cs131/a2/mostpop.txt
+ 332473 237.0
+[hruday23fa@sjsu ~]$ cut -d',' -f8 taxidata/2019-02.csv | sort | uniq -c | sort -nr | head -n 1 >> cs131/a2/mostpop.txt
+[hruday23fa@sjsu ~]$ cat cs131/a2/mostpop.txt
+ 332473 237.0
+ 294584 237.0
+[hruday23fa@sjsu ~]$ cut -d',' -f8 taxidata/2019-03.csv | sort | uniq -c | sort -nr | head -n 1 >> cs131/a2/mostpop.txt
+[hruday23fa@sjsu ~]$ cat cs131/a2/mostpop.txt
+ 332473 237.0
+ 294584 237.0
+ 328027 161.0
+[hruday23fa@sjsu ~]$ cut -d',' -f8 taxidata/2019-04.csv | sort | uniq -c | sort -nr | head -n 1 >> cs131/a2/mostpop.txt
+[hruday23fa@sjsu ~]$ cut -d',' -f8 taxidata/2019-05.csv | sort | uniq -c | sort -nr | head -n 1 >> cs131/a2/mostpop.txt
+[hruday23fa@sjsu ~]$ cut -d',' -f8 taxidata/2019-06.csv | sort | uniq -c | sort -nr | head -n 1 >> cs131/a2/mostpop.txt
+[hruday23fa@sjsu ~]$ cut -d',' -f8 taxidata/2019-07.csv | sort | uniq -c | sort -nr | head -n 1 >> cs131/a2/mostpop.txt
+[hruday23fa@sjsu ~]$ cut -d',' -f8 taxidata/2019-08.csv | sort | uniq -c | sort -nr | head -n 1 >> cs131/a2/mostpop.txt
+[hruday23fa@sjsu ~]$ cut -d',' -f8 taxidata/2019-09.csv | sort | uniq -c | sort -nr | head -n 1 >> cs131/a2/mostpop.txt
+[hruday23fa@sjsu ~]$ cut -d',' -f8 taxidata/2019-10.csv | sort | uniq -c | sort -nr | head -n 1 >> cs131/a2/mostpop.txt
+[hruday23fa@sjsu ~]$ cut -d',' -f8 taxidata/2019-11.csv | sort | uniq -c | sort -nr | head -n 1 >> cs131/a2/mostpop.txt
+[hruday23fa@sjsu ~]$ cut -d',' -f8 taxidata/2019-12.csv | sort | uniq -c | sort -nr | head -n 1 >> cs131/a2/mostpop.txt
+ [hruday23fa@sjsu ~]$ sort cs131/a2/mostpop.txt | uniq -c | sort -nr | head -n 1
+      1  347992 237.0
+

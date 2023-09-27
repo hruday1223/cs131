@@ -1,0 +1,84 @@
+  
+  656  mkdir a2
+  657  ls
+  658  cd
+  659  cd taxidata
+  660  ls
+  661  cat head 2019-05.csv 
+  662  grep "2019-05-11" 2019-05.csv | head -n 5
+  663  grep "2019-05-11" 2019-05.csv | head -n 5 | cut -d',' -f2
+  664  cut -d',' -f2 | grep "2019-05-11" 2019-05.csv | head -n 5
+  665  cut -d',' -f2 2019-05.csv | grep "2019-05-11" | head -n 5
+  666  cut -d',' -f2 2019-05.csv | grep "2019-05-11" | cut -d',' -f17 |head -n 5
+  667  grep "2019-05-11" | cut -d',' -f17 |head -n 5
+  668  grep "2019-05-11" 2019-05.csv | cut -d',' -f17 |head -n 5
+  669  awk -F',' '/2019-05-11/ {print}' 2019-05.csv | head -n 5
+  670   awk -F',' '$2 == "2019-05-11" {print}' 2019-05.csv | head -n 5
+  671  awk -F',' '$2 == "2019-05-11" {print}' 2019-05.csv | head -n 5
+  672  awk -F',' '$3 == "2019-05-11" {print}' 2019-05.csv | head -n 5
+  673  awk -F',' '$2 == /2019-05-11/ {print}' 2019-05.csv | head -n 5
+  674  awk -F',' '/2019-05-11/ {print}' 2019-05.csv | head -n 5
+  676  grep '^.*,2019-05-11,' 2019-05.csv | head -n 5
+  677  history 10
+  678  cd taxidata
+  679  awk -F',' '$2 == "2019-05-11" {print} 2019-05.csv | head -n 5
+  680  awk -F',' '$2 == "2019-05-11" {print} 2019-05.csv | head -n 5
+  681   awk -F',' '$2 == "2019-05-11" {print} 2019-05.csv
+  682  pickup.txt
+  683  ls
+  684  man awk
+  685  man grep
+  686  [hruday23fa@sjsu taxidata]$ cut -d',' -f2,f17 2019-05.csv | grep "2019-05-11" |head -n 5
+  687  cut -d',' -f2,f17 2019-05.csv | grep "2019-05-11" |head -n 5
+  688  cut -d',' -f2,f3 2019-05.csv | grep "2019-05-11" |head -n 5
+  689  cut -d',' -f2,17 2019-05.csv | grep "2019-05-11" |head -n 5
+  690  cut -d',' -f2,17 2019-05.csv | grep "2019-05-11" | cut -d',' -f2 |  head -n 5
+  691  man awk
+  692  help awk
+  693  info awk
+  694  man -k awk
+  695  cut -d',' -f2,17 2019-05.csv | grep "2019-05-11" | cut -d',' -f2 | awk '{ total += $1; count++ } END { print total / count }' | head -n 5
+  696  cut -d',' -f2,17 2019-05.csv | grep "2019-05-11" | cut -d',' -f2 | awk '{ total += $1; count++ } END { print total / count }'
+  698  cut -d',' -f2,17 taxidata/2019-05.csv | grep "2019-05-11" | cut -d',' -f2 | awk '{ total += $1; count++ } END { print total / count }'
+  699  cut -d',' -f2,17 taxidata/2019-05.csv | grep "2019-05-11" | cut -d',' -f2 | sort -rn | head -n 1
+  700  cut -d',' -f2,17 taxidata/2019-05.csv | grep "2019-05-11" | cut -d',' -f2 | sort | uniq -c | sort -rn | head -n 1
+  701  cut -d',' -f2,17 taxidata/2019-05.csv | grep "2019-05-11" | cut -d',' -f2 | sort | sort -rn | head -n 1
+  702  vi cs131/a2/a2.txt
+  703  ls
+  704  cd cs131
+  705  ls
+  706  cd a2
+  707  l
+  708  ls
+  709  cd a2.txt
+  710  vi a2.txt
+  711  cut -d',' -f2,17 taxidata/2019-05.csv | grep "2019-05-11" | cut -d',' -f2 | sort -rn | head -n 1
+  712  cd
+  713  cut -d',' -f2,17 taxidata/2019-05.csv | grep "2019-05-11" | cut -d',' -f2 | sort -rn | head -n 1
+  714  vi cs131/a2/a2.txt
+  715  cat cs131/a2/a2.txt
+  716  cut -d',' -f2,8,9 taxidata/2019-05.csv | grep "2019-05-20" | cut -d',' -f2,3 | sort | uniq -c | sort -nr | head -n 10
+  717  cut -d',' -f2,8,9 taxidata/2019-05.csv | grep "2019-05-20" | cut -d',' -f2,3 | sort | uniq -c | sort -nr | cut -d',' -f2 | sort | uniq -c | sort -nr | head -n 1
+  718  vi cs131/a2/a2.txt
+  719  cut -d',' -f8 taxidata/2019-01.csv | sort | uniq -c | sort -nr | head -n 5
+  720  cut -d',' -f8 taxidata/2019-01.csv | sort | uniq -c | sort -nr | head -n 1 > cs131/a2/mostpop.txt
+  721  cat cs131/a2/mostpop.txt
+  722  cut -d',' -f8 taxidata/2019-02.csv | sort | uniq -c | sort -nr | head -n 1 >> cs131/a2/mostpop.txt
+  723  cat cs131/a2/mostpop.txt
+  724  cut -d',' -f8 taxidata/2019-03.csv | sort | uniq -c | sort -nr | head -n 1 >> cs131/a2/mostpop.txt
+  725  cat cs131/a2/mostpop.txt
+  726  cut -d',' -f8 taxidata/2019-04.csv | sort | uniq -c | sort -nr | head -n 1 >> cs131/a2/mostpop.txt
+  727  cut -d',' -f8 taxidata/2019-05.csv | sort | uniq -c | sort -nr | head -n 1 >> cs131/a2/mostpop.txt
+  728  cut -d',' -f8 taxidata/2019-06.csv | sort | uniq -c | sort -nr | head -n 1 >> cs131/a2/mostpop.txt
+  729  cut -d',' -f8 taxidata/2019-07.csv | sort | uniq -c | sort -nr | head -n 1 >> cs131/a2/mostpop.txt
+  730  cut -d',' -f8 taxidata/2019-08.csv | sort | uniq -c | sort -nr | head -n 1 >> cs131/a2/mostpop.txt
+  731  cut -d',' -f8 taxidata/2019-09.csv | sort | uniq -c | sort -nr | head -n 1 >> cs131/a2/mostpop.txt
+  732  cut -d',' -f8 taxidata/2019-10.csv | sort | uniq -c | sort -nr | head -n 1 >> cs131/a2/mostpop.txt
+  733  cut -d',' -f8 taxidata/2019-11.csv | sort | uniq -c | sort -nr | head -n 1 >> cs131/a2/mostpop.txt
+  734  cut -d',' -f8 taxidata/2019-12.csv | sort | uniq -c | sort -nr | head -n 1 >> cs131/a2/mostpop.txt
+  735  cat cs131/a2/mostpop.txt
+  736   cs131/a2/mostpop.txt | sort | uniq -c | sort -nr 
+  737  sort cs131/a2/mostpop.txt | uniq -c | sort -nr
+  738  sort cs131/a2/mostpop.txt | uniq -c | sort -nr | head -n 1
+  739  vi cs131/a2/a2.txt
+  744  history 90 > cs131/a2/cmds.log

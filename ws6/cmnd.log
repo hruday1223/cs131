@@ -1,0 +1,14 @@
+1)
+sed -n '/^2\.0,/p' taxidata/2019-11.csv > cs131/ws6/vendor2.csv
+
+wc vendor2.csv 
+
+2)
+sed 's/[:"-]//g' taxidata/2019-11.csv > cs131/ws6/no-separators.csv
+
+head -10 no-separators.csv
+
+3)
+sed 's/\.[0-9]*//g' no-separators.csv > no-fractions.csv
+
+head -10 no-fractions.csv

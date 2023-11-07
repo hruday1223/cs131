@@ -13,4 +13,4 @@ set ylabel "tip amount"
 
 set yrange[0:250]
 
-plot 'boxplot.dat' using 4:12:xtic(2) with boxes lc rgb 'gray' title "Tip per number of passengers"
+plot 'cs131/a3/boxplot.dat' using 1:2:xtic(2) with boxes lc rgb 'gray' title "Tip per number of passengers"

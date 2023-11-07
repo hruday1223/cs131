@@ -1,0 +1,9 @@
+1) [hruday23fa@sjsu ~]$ awk -F',' ' {sum[$8] += $17; count[$8]++} END { for (location in sum) {average_total = sum[location]/count[location]; printf("%d,%.2f\n", location, average_total) }}' taxidata/2019-08.csv | sort -t',' -k2,2nr | head -n 10
+
+2) [hruday23fa@sjsu ~]$ awk -F',' ' { sum[$8,$9] += $17; count[$8,$9]++} END { max = -1; for (pair in sum) { avg = sum[pair] / count[pair]; {if (avg > max) { max = avg; max_pair = pair }} } print "Pickup-Dropoff Pair:", max_pair, "Average Total Amount:", max }' taxidata/2019-08.csv
+
+3)
+[hruday23fa@sjsu ~]$  awk -F',' '{sum[$4] += $14; count[$4]++} END { for (passengers in sum) { print passengers "," sum[passengers] / count[passengers]; } }' taxidata/2019-08.csv >  boxplot.dat
+
+4)
+[hruday23fa@sjsu ~]$  awk -F',' '{sum[$5] += $17; count[$5]++} END { for (passengers in sum) { print passengers "," sum[passengers] / count[passengers]; } }' taxidata/2019-08.csv >  scatter.dat

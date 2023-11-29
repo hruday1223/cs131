@@ -4,9 +4,9 @@
  1033  cd cs131
  1034  cd a5
  
- 1043  awk -F',' '{time = $5 - $4; count[time]++} END {for (key in count) print key, ",", count[key]}' 100k_a.csv > cs131/a5/plot.dat
+ awk -F',' '{time = $5 - $4; count[time]++} END {for (key in count) print count[key], ",", key}' 100k_a.csv > cs131/a5/plot.dat
  
- 1047  vi plot.dat
+1047  vi plot.dat
  
  1052  vi boxplot.plt
  1053  gnuplot

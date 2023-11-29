@@ -1,0 +1,16 @@
+ 
+ 1031  wget https://datarepo.eng.ucsd.edu/mcauley_group/gdrive/twitch/100k_a.csv
+ 1032  vi 100k_a.csv 
+ 1033  cd cs131
+ 1034  cd a5
+ 
+ 1043  awk -F',' '{time = $5 - $4; count[time]++} END {for (key in count) print key, ",", count[key]}' 100k_a.csv > cs131/a5/plot.dat
+ 
+ 1047  vi plot.dat
+ 
+ 1052  vi boxplot.plt
+ 1053  gnuplot
+ 
+ 1058  vi scatter.plt
+ 1059  gnuplot
+ 
